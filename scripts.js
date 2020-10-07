@@ -44,6 +44,7 @@ function closeForm() {
     const library = document.querySelector('.library');
     form.classList.add('hide');
     library.classList.remove('hide');
+    clearFields();
 }
 
 function addBook() {
@@ -64,6 +65,7 @@ function addBook() {
         addBookToDom(book, books.length - 1);
         closeForm();
     }
+    clearFields();
 }
 
 function toggleRead(e) {
@@ -74,7 +76,7 @@ function toggleRead(e) {
 }
 
 function addBookToDom(book, counter) {
-    const table = document.querySelector('table');
+    const table = document.querySelector('tbody');
     const row = document.createElement('tr');
     row.classList.add('row')
     row.classList.add('book');
@@ -117,6 +119,12 @@ function removeBook(e) {
 
 function updateLocalStorage(book) {
     localStorage.setItem('books', JSON.stringify(books));
+}
+
+function clearFields() {
+    const fields = document.querySelectorAll('input');
+    console.log(fields[0]);
+    fields.forEach(field => field.value = '');
 }
 // add event listners
 
