@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="library">
+            <h1>Library</h1>
+            <button class="new-book">New Book</button>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read?</th>
+                    <th>Remove</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-popup hide" id="myForm">
+            <form class="form-container">
+              <h3>Add New Book</h3>
+          
+              <label for="title"><b>Title:</b></label>
+              <input class="title" type="text" placeholder="e.g., Frankenstein" name="title">
+              <br>
+          
+              <label for="author"><b>Author:</b></label>
+              <input class="author" type="text" placeholder="e.g., Mary Shelley" name="author">
+              <br>
+
+              <label for="num-pages"><b>Number of Pages:</b></label>
+              <input class="num-pages" type="text" placeholder="e.g., 280" name="num-pages">
+              <br>
+
+              <label for="read"><b>Read?:</b></label>
+              <input class="read" type="checkbox" name="read">
+              <br>  
+          
+              <button class="btn submit" type="button">Add</button>
+              <button class="btn cancel" type="button">Close</button>
+            </form>
+          </div> 
+        <script src="scripts.js"></script>
+    </body>
+</html>
