@@ -1,12 +1,13 @@
 // constructors
 
-function Book(title, author, numPages, isRead) {
-    this.title = title;
-    this.author = author;
-    this.numPages = numPages;
-    this.isRead = isRead;
+class Book {
+    constructor (title, author, numPages, isRead) {
+        this.title = title;
+        this.author = author;
+        this.numPages = numPages;
+        this.isRead = isRead;
+    }
 }
-
 // global variables
 
 const testBook1 = new Book('a', 'Test1', 230, true);
