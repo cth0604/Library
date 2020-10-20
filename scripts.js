@@ -18,11 +18,6 @@ let books = [testBook1, testBook2];
 
 // functions
 
-function storeBook(book) {
-    books.push(book);
-    displayBooks();
-}
-
 function displayBooks() {
     let counter = 0;
     for(book of books) {
